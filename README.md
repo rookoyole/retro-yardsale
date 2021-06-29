@@ -88,7 +88,6 @@ Deployed Link: [https://xx.herokuapp.com/](https://xx-45427.herokuapp.com/)
 * Kevin Angulo - kevingangulo@gmail.com
 * Emily Stewart - stewartemilym2014@gmail.com
 * Kyle Ryan - rookoyole@gmail.com
-*
 
 Template from: https://github.com/othneildrew/Best-README-Template/blob/master/README.md
 
