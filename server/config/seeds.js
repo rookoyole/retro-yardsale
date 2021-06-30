@@ -5,11 +5,10 @@ db.once('open', async () => {
   await Category.deleteMany();
 
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Game Consoles' },
+    { name: 'Music Players' },
+    { name: 'Clothes' },
+    { name: 'Furniture' }
   ]);
 
   console.log('categories seeded');
@@ -18,111 +17,129 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
+      name: 'Atari',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+        'Atari was created by Nolan Bushnell and Ted Dabney in 1972 and became a pioneer in arcade games, home video game consoles and home computers.',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
+      price: 99.99,
+      quantity: 1
     },
     {
-      name: 'Canned Coffee',
+      name: 'Sega Genesis',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
+        "The Sega Genesis, known as the Mega Drive[b] outside North America, is a 16-bit fourth-generation home video game console developed and sold by Sega. The Genesis was Sega's third console and the successor to the Master System.",
       image: 'canned-coffee.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 59.99,
+      quantity: 1
     },
     {
-      name: 'Toilet Paper',
+      name: 'Nintendo Entertainment System (NES)',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
+        'Designed to look like a household appliance (and not like a video game console), the NES was the first console released post 1984-tech crash.',
       image: 'toilet-paper.jpg',
-      price: 7.99,
-      quantity: 20
+      price: 250.00,
+      quantity: 2
     },
     {
-      name: 'Handmade Soap',
+      name: 'Nintendo 64 (N64)',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
+        'The Nintendo 64 (abbreviated as N64, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. The console is the successor to the Super Nintendo Entertainment System.',
       image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
+      price: 75.99,
+      quantity: 5
     },
     {
-      name: 'Set of Wooden Spoons',
+      name: 'Playstation',
       category: categories[1]._id,
       description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
+        'The PlayStation[a] (abbreviated as PS, commonly known as the PS1 or its codename PSX) is a home video game console developed and marketed by Sony Computer Entertainment.',
       image: 'wooden-spoons.jpg',
-      price: 14.99,
-      quantity: 100
+      price: 29.99,
+      quantity: 0
     },
     {
-      name: 'Camera',
+      name: 'Cassette Deck (Cassette Player)',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
+        'A cassette deck is a type of tape machine for playing and recording audio cassettes that does not have built-in power amplifier or speakers or both, and serves primarily as a transport.',
       image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+      price: 39.99,
+      quantity: 3
     },
     {
-      name: 'Tablet',
+      name: 'CD Player',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
+        'A CD player is an electronic device that plays audio compact discs, which are a digital optical disc data storage format.',
       image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
+      price: 7.50,
+      quantity: 0
     },
     {
-      name: 'Tales at Bedtime',
+      name: 'Bell Bottom Jeans',
       category: categories[3]._id,
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
+        'Add some vintage charm to your everyday wardrobe with our flare jeans for women.',
+      image: 'bedtime-book.jpg',
+      price: 19.99,
+      quantity: 4
+    },
+    {
+      name: 'Replica John Lennon Sun Glasses',
+      category: categories[3]._id,
+      description:
+        "Round hippie sunglasses colored scratch-resistant and anti-reflective coatings.",
       image: 'bedtime-book.jpg',
       price: 9.99,
-      quantity: 100
+      quantity: 2
     },
     {
-      name: 'Spinning Top',
+      name: 'Go-go Boots',
+      category: categories[3]._id,
+      description:
+        'Go-go boots are known for their practical features and comfort. They are stylish, durable, and comfortable to wear.',
+      image: 'bedtime-book.jpg',
+      price: 29.99,
+      quantity: 5
+    },
+    {
+      name: 'Shag Carpet',
       category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
+      description: 'Shag rugs get their name from their distinctive appearance — a shaggy, uneven pile that is an inch or more. These rugs are available in a variety of colors and materials like wool, cotton, and leather.',
       image: 'spinning-top.jpg',
-      price: 1.99,
+      price: 49.99,
       quantity: 1000
     },
     {
-      name: 'Set of Plastic Horses',
+      name: 'Ash Tray',
       category: categories[4]._id,
       description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
+        'A receptacle for ash from cigarettes and cigars. Ashtrays are typically made of fire-retardant material such as glass, heat-resistant plastic, pottery, metal, or stone.',
       image: 'plastic-horses.jpg',
       price: 2.99,
-      quantity: 1000
+      quantity: 10
     },
     {
-      name: 'Teddy Bear',
+      name: 'Animal Statues',
       category: categories[4]._id,
       description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
+        'Offering Curated Wildlife Themed Fine Gifts, Jewelry, and Home Decor for Your Home.',
       image: 'teddy-bear.jpg',
       price: 7.99,
       quantity: 100
     },
     {
-      name: 'Alphabet Blocks',
+      name: 'Lava Lamp',
       category: categories[4]._id,
       description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+        'A decorative lamp constructed of a transparent glass container filled with liquid and wax that is heated by an incandescent bulb which melts the wax and causes it to form random moving shapes within the liquid.',
       image: 'alphabet-blocks.jpg',
       price: 9.99,
-      quantity: 600
+      quantity: 7
     }
   ]);
 

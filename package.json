@@ -1,7 +1,7 @@
 {
-  "name": "mern-shopping",
+  "name": "retro-yardsale",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- *** Thanks for checking out the Best-README-Template. If you have a suggestion *** that would make this better, please fork the repo and create a pull request *** or simply open an issue with the tag \"enhancement\". *** Thanks again! Now go create something AMAZING! :D *** *** *** *** To avoid retyping too much info. Do a search and replace for the following: *** github_username, repo_name, twitter_handle, email, project_title, project_description -->",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -14,9 +14,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "graphql": "^15.5.1",
     "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rookoyole/retro-yardsale.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rookoyole/retro-yardsale/issues"
+  },
+  "homepage": "https://github.com/rookoyole/retro-yardsale#readme"
 }
