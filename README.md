@@ -79,7 +79,7 @@ Features:
 
 Repository Link: [https://github.com/rookoyole/retro-yardsale](https://github.com/rookoyole/retro-yardsale)
 
-Deployed Link: [https://xx.herokuapp.com/](https://xx-45427.herokuapp.com/)
+Deployed Link: [https://retro-yardsale.herokuapp.com/](https://retro-yardsale.herokuapp.com/)
 
 <!-- CONTACT -->
 ## Contact
