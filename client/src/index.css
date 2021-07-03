@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+
 :root {
-  --primary: #232F3E;
-  --secondary: #F3A847;
-  --tertiary: #B12704;
+  --primary: #726A95;
+  --secondary: #A0C1B8;
+  --tertiary: #719FB0;
   --light: #fafafa;
-  --dark: #272f32;
+  --dark: #351F39;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -11,21 +13,21 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Slackey', cursive;
 }
 
-html,
-body {
-  min-height: 100%;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  color: var(--dark);
+  color: #F3A847;
 }
 
 h1,
@@ -34,18 +36,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik', sans-serif;
+  text-align: center;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
-
+#cat-button {
+  align-items:inherit;
+}
 h1 {
   font-size: 2.25rem;
 }
 
 h2 {
   font-size: 2rem;
+  color: var(--dark);
 }
 
 h3 {
@@ -88,6 +93,7 @@ header a {
 }
 
 button {
+  align-self:baseline;
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -109,7 +115,19 @@ button[disabled] {
 }
 
 img {
-  max-width: 100%;
+  max-width: 75%;
+}
+
+.products {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+/* Add a hover effect (blue shadow) */
+.products:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 span[role="img"] {
@@ -133,14 +151,26 @@ input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
-
-.container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+.homeContainer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #F6E3BA;
 }
-
+.logIn {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signUp {
+align-items: center;
+}
 .flex-row {
   display: flex;
   flex-wrap: wrap;
