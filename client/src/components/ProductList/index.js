@@ -6,6 +6,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { QUERY_PRODUCTS } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 import spinner from "../../assets/spinner.gif"
+import background from "../../assets/images/retro3.jpg";
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
@@ -42,7 +43,9 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
+    <div style={{
+      backgroundImage: `url(${background})`,}} 
+      className="my-2">
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">

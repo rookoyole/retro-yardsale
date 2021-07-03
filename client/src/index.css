@@ -121,6 +121,10 @@ button[disabled] {
 img {
   max-width: 75%;
 }
+.detail-img{
+  width:  300px;
+  height: 300px;
+}
 
 .products {
   border: 1px solid #ddd; /* Gray border */
@@ -161,6 +165,12 @@ input:focus {
   background-size: contain;
   background-color: #F6E3BA;
 }
+.product-container{
+  text-align:center;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .logIn {
   background-position: center;
   background-repeat: no-repeat;
@@ -178,10 +188,27 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
 }
-.category{
-  width: 656px;
-  margin: 0 auto;
+.cat-page{
+  width: auto;
   text-align: center;
+  margin: 0 auto;
+}
+.category{
+  margin: 0 auto;
+  text-align:end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.description{
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width:40em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .flex-row {
   display: flex;
