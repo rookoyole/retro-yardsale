@@ -3,6 +3,7 @@ import { useMutation } from '@apollo/react-hooks';
 import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations"
 import Auth from "../utils/auth";
+import background from "../assets/images/retro4.jpg";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' })
@@ -28,15 +29,20 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div 
+    style={{
+      backgroundImage: `url(${background})`,
+      width: '100vw',
+      height: '100vh'}} 
+    className="logIn">
       <Link to="/signup">
         ← Go to Signup
       </Link>
 
       <h2>Login</h2>
-      <form onSubmit={handleFormSubmit}>
+      <form className="log-form" onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
+          <label className="label" htmlFor="email">Email address:</label>
           <input
             placeholder="youremail@test.com"
             name="email"
@@ -46,9 +52,9 @@ function Login(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
+          <label className="label" htmlFor="pwd">Password:</label>
           <input
-            placeholder="******"
+            placeholder="****"
             name="password"
             type="password"
             id="pwd"

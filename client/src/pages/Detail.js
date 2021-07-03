@@ -89,17 +89,25 @@ function Detail() {
           <Link to="/">
             ← Back to Products
           </Link>
+          
 
           <h2>{currentProduct.name}</h2>
+
+          <img
+            src={`/images/${currentProduct.image}`}
+            alt={currentProduct.name}
+          />
+
+            <p>
+            <strong>Price:</strong>
+            ${currentProduct.price}
+            {" "}
+            </p>
 
           <p>
             {currentProduct.description}
           </p>
 
-          <p>
-            <strong>Price:</strong>
-            ${currentProduct.price}
-            {" "}
             <button onClick={addToCart}>
               Add to Cart
             </button>
@@ -109,12 +117,7 @@ function Detail() {
             >
               Remove from Cart
             </button>
-          </p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
         </div>
       ) : null}
       {

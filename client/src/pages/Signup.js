@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useMutation } from '@apollo/react-hooks';
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
+import background from "../assets/images/VW.jpeg";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -29,13 +30,18 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div style={{
+      backgroundImage: `url(${background})`,
+      width: '100vw',
+      height: '100vh'}} 
+       className="container">
       <Link to="/login">
         ← Go to Login
       </Link>
 
       <h2>Signup</h2>
-      <form onSubmit={handleFormSubmit}>
+      <form className="signUp"
+       onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
           <label htmlFor="firstName">First Name:</label>
           <input
