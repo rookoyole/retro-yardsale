@@ -36,7 +36,7 @@ db.once('open', async () => {
     },
     {
       name: 'Nintendo Entertainment System (NES)',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'Designed to look like a household appliance (and not like a video game console), the NES was the first console released post 1984-tech crash.',
       image: 'toilet-paper.jpg',
@@ -45,7 +45,7 @@ db.once('open', async () => {
     },
     {
       name: 'Nintendo 64 (N64)',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'The Nintendo 64 (abbreviated as N64, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. The console is the successor to the Super Nintendo Entertainment System.',
       image: 'soap.jpg',
@@ -54,7 +54,7 @@ db.once('open', async () => {
     },
     {
       name: 'Playstation',
-      category: categories[1]._id,
+      category: categories[0]._id,
       description:
         'The PlayStation[a] (abbreviated as PS, commonly known as the PS1 or its codename PSX) is a home video game console developed and marketed by Sony Computer Entertainment.',
       image: 'wooden-spoons.jpg',
@@ -63,7 +63,7 @@ db.once('open', async () => {
     },
     {
       name: 'Cassette Deck (Cassette Player)',
-      category: categories[2]._id,
+      category: categories[1]._id,
       description:
         'A cassette deck is a type of tape machine for playing and recording audio cassettes that does not have built-in power amplifier or speakers or both, and serves primarily as a transport.',
       image: 'camera.jpg',
@@ -72,7 +72,7 @@ db.once('open', async () => {
     },
     {
       name: 'CD Player',
-      category: categories[2]._id,
+      category: categories[1]._id,
       description:
         'A CD player is an electronic device that plays audio compact discs, which are a digital optical disc data storage format.',
       image: 'tablet.jpg',
@@ -81,7 +81,7 @@ db.once('open', async () => {
     },
     {
       name: 'Bell Bottom Jeans',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
         'Add some vintage charm to your everyday wardrobe with our flare jeans for women.',
       image: 'bedtime-book.jpg',
@@ -90,7 +90,7 @@ db.once('open', async () => {
     },
     {
       name: 'Replica John Lennon Sun Glasses',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
         "Round hippie sunglasses colored scratch-resistant and anti-reflective coatings.",
       image: 'bedtime-book.jpg',
@@ -99,7 +99,7 @@ db.once('open', async () => {
     },
     {
       name: 'Go-go Boots',
-      category: categories[3]._id,
+      category: categories[2]._id,
       description:
         'Go-go boots are known for their practical features and comfort. They are stylish, durable, and comfortable to wear.',
       image: 'bedtime-book.jpg',
@@ -108,7 +108,7 @@ db.once('open', async () => {
     },
     {
       name: 'Shag Carpet',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description: 'Shag rugs get their name from their distinctive appearance — a shaggy, uneven pile that is an inch or more. These rugs are available in a variety of colors and materials like wool, cotton, and leather.',
       image: 'spinning-top.jpg',
       price: 49.99,
@@ -116,7 +116,7 @@ db.once('open', async () => {
     },
     {
       name: 'Ash Tray',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'A receptacle for ash from cigarettes and cigars. Ashtrays are typically made of fire-retardant material such as glass, heat-resistant plastic, pottery, metal, or stone.',
       image: 'plastic-horses.jpg',
@@ -125,7 +125,7 @@ db.once('open', async () => {
     },
     {
       name: 'Animal Statues',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Offering Curated Wildlife Themed Fine Gifts, Jewelry, and Home Decor for Your Home.',
       image: 'teddy-bear.jpg',
@@ -134,7 +134,7 @@ db.once('open', async () => {
     },
     {
       name: 'Lava Lamp',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'A decorative lamp constructed of a transparent glass container filled with liquid and wax that is heated by an incandescent bulb which melts the wax and causes it to form random moving shapes within the liquid.',
       image: 'alphabet-blocks.jpg',
