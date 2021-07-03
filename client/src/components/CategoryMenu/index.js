@@ -45,8 +45,14 @@ function CategoryMenu() {
       {categories.map(item => (
         <button
           key={item._id}
+
           onClick={() => {
+            if (item.name === "All") {
+            window.location.reload();
+            }
+          // console.log(categories);
             handleClick(item._id);
+            
           }}
         >
           {item.name}

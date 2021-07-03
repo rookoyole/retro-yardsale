@@ -23,7 +23,6 @@ db.once('open', async () => {
         'Atari was created by Nolan Bushnell and Ted Dabney in 1972 and became a pioneer in arcade games, home video game consoles and home computers.',
       image: 'atari.jpeg',
       category: categories[0]._id,
-      category: categories[4]._id,
       price: 99.99,
       quantity: 1
     },
