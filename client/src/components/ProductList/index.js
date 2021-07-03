@@ -44,8 +44,10 @@ function ProductList() {
 
   return (
     <div style={{
-      backgroundImage: `url(${background})`,}} 
-      className="my-2">
+      backgroundImage: `url(${background})`,
+      width: '100vw',
+      height: '100vh'}} 
+      className="product-list">
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
