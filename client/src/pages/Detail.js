@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from '../assets/spinner.gif'
+import background from "../assets/images/retro8.jpg";
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -85,15 +86,20 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div style={{
+          backgroundImage: `url(${background})`,
+          width: '100vw',
+          height: '100vh'}} 
+          className="container my-1">
           <Link to="/">
             ← Back to Products
           </Link>
           
-
+          <div className="product-container">
           <h2>{currentProduct.name}</h2>
 
           <img
+            className="detail-img"
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
@@ -104,7 +110,7 @@ function Detail() {
             {" "}
             </p>
 
-          <p>
+          <p className="description">
             {currentProduct.description}
           </p>
 
@@ -117,7 +123,7 @@ function Detail() {
             >
               Remove from Cart
             </button>
-
+            </div>
         </div>
       ) : null}
       {

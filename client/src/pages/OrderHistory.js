@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { useQuery } from '@apollo/react-hooks';
 import { QUERY_USER } from "../utils/queries";
+import background from "../assets/images/retro7.jpg";
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
@@ -14,7 +15,11 @@ function OrderHistory() {
 
   return (
     <>
-      <div className="container my-1">
+      <div style={{
+      backgroundImage: `url(${background})`,
+      width: '100vw',
+      height: '100vh'}} 
+      className="container my-1">
         <Link to="/">
           ← Back to Products
           </Link>
