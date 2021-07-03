@@ -20,7 +20,7 @@ db.once('open', async () => {
       name: 'Atari',
       description:
         'Atari was created by Nolan Bushnell and Ted Dabney in 1972 and became a pioneer in arcade games, home video game consoles and home computers.',
-      image: 'cookie-tin.jpg',
+      image: 'atari.jpeg',
       category: categories[0]._id,
       price: 99.99,
       quantity: 1
@@ -29,7 +29,7 @@ db.once('open', async () => {
       name: 'Sega Genesis',
       description:
         "The Sega Genesis, known as the Mega Drive[b] outside North America, is a 16-bit fourth-generation home video game console developed and sold by Sega. The Genesis was Sega's third console and the successor to the Master System.",
-      image: 'canned-coffee.jpg',
+      image: 'sGenesis.jpeg',
       category: categories[0]._id,
       price: 59.99,
       quantity: 1
@@ -39,7 +39,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'Designed to look like a household appliance (and not like a video game console), the NES was the first console released post 1984-tech crash.',
-      image: 'toilet-paper.jpg',
+      image: 'nes.jpeg',
       price: 250.00,
       quantity: 2
     },
@@ -48,7 +48,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'The Nintendo 64 (abbreviated as N64, stylized as NINTENDO64) is a home video game console developed and marketed by Nintendo. The console is the successor to the Super Nintendo Entertainment System.',
-      image: 'soap.jpg',
+      image: 'n64.jpeg',
       price: 75.99,
       quantity: 5
     },
@@ -57,7 +57,7 @@ db.once('open', async () => {
       category: categories[0]._id,
       description:
         'The PlayStation[a] (abbreviated as PS, commonly known as the PS1 or its codename PSX) is a home video game console developed and marketed by Sony Computer Entertainment.',
-      image: 'wooden-spoons.jpg',
+      image: 'ps1.jpeg',
       price: 29.99,
       quantity: 0
     },
@@ -66,7 +66,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'A cassette deck is a type of tape machine for playing and recording audio cassettes that does not have built-in power amplifier or speakers or both, and serves primarily as a transport.',
-      image: 'camera.jpg',
+      image: 'cassetteDeck.jpeg',
       price: 39.99,
       quantity: 3
     },
@@ -75,7 +75,7 @@ db.once('open', async () => {
       category: categories[1]._id,
       description:
         'A CD player is an electronic device that plays audio compact discs, which are a digital optical disc data storage format.',
-      image: 'tablet.jpg',
+      image: 'cdPlayer.jpeg',
       price: 7.50,
       quantity: 0
     },
@@ -84,7 +84,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Add some vintage charm to your everyday wardrobe with our flare jeans for women.',
-      image: 'bedtime-book.jpg',
+      image: 'bbJeans.jpeg',
       price: 19.99,
       quantity: 4
     },
@@ -93,7 +93,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         "Round hippie sunglasses colored scratch-resistant and anti-reflective coatings.",
-      image: 'bedtime-book.jpg',
+      image: 'SunGlasses.jpeg',
       price: 9.99,
       quantity: 2
     },
@@ -102,7 +102,7 @@ db.once('open', async () => {
       category: categories[2]._id,
       description:
         'Go-go boots are known for their practical features and comfort. They are stylish, durable, and comfortable to wear.',
-      image: 'bedtime-book.jpg',
+      image: 'gogoBoots.jpeg',
       price: 29.99,
       quantity: 5
     },
@@ -110,7 +110,7 @@ db.once('open', async () => {
       name: 'Shag Carpet',
       category: categories[3]._id,
       description: 'Shag rugs get their name from their distinctive appearance — a shaggy, uneven pile that is an inch or more. These rugs are available in a variety of colors and materials like wool, cotton, and leather.',
-      image: 'spinning-top.jpg',
+      image: 'shagCarpet.jpeg',
       price: 49.99,
       quantity: 1000
     },
@@ -119,7 +119,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'A receptacle for ash from cigarettes and cigars. Ashtrays are typically made of fire-retardant material such as glass, heat-resistant plastic, pottery, metal, or stone.',
-      image: 'plastic-horses.jpg',
+      image: 'ashTray.jpeg',
       price: 2.99,
       quantity: 10
     },
@@ -128,7 +128,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Offering Curated Wildlife Themed Fine Gifts, Jewelry, and Home Decor for Your Home.',
-      image: 'teddy-bear.jpg',
+      image: 'bpStatue.jpeg',
       price: 7.99,
       quantity: 100
     },
@@ -137,7 +137,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'A decorative lamp constructed of a transparent glass container filled with liquid and wax that is heated by an incandescent bulb which melts the wax and causes it to form random moving shapes within the liquid.',
-      image: 'alphabet-blocks.jpg',
+      image: 'lavaLamp.jpeg',
       price: 9.99,
       quantity: 7
     }
