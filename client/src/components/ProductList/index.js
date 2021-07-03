@@ -47,7 +47,7 @@ function ProductList() {
       backgroundImage: `url(${background})`,
       width: '100vw',
       height: '100vh'}} 
-      className="my-2">
+      className="product-list">
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
