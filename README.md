@@ -69,10 +69,27 @@
 
 [![Product Name Screen Shot][product-screenshot]](client/src/assets/images/screenshot.png)
 <br />
-The purpose of this project was to ...
+The purpose of this project was to MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand.
+
+Our soltuion is a full e-ecommerce site where you can find vintage electronics, foods, furniture, etc, and have the ability to filter through cer tain categories such as gaming, clothing, etc. When users create a profile, they will have the ability to save options to wishlists, sell items of their own, and the ability to purchase items from the sellers/site.
 
 Features:
-* xxxx
+* React front-end
+* GraphQL with a Node.js and Express.js server
+* MongoDB and the Mongoose ODM for the database
+* Queries and mutations for retrieving, adding, updating, and deleting data
+* Authentication (JWT)
+
+<!-- PROJECT USAGE -->
+## Project Usage
+
+The production version can be accessed via the deployed link below.
+
+To run the application from a command line interface, enter the following commands:
+```js
+npm run seed
+npm run start:dev
+```
 
 <!-- PROJECT LINKS -->
 ## Project Links
@@ -85,7 +102,6 @@ Deployed Link: [https://retro-yardsale.herokuapp.com/](https://retro-yardsale.he
 ## Contact
 
 * Maribel Ellison - maribel.duron86@gmail.com
-* Kevin Angulo - kevingangulo@gmail.com
 * Emily Stewart - stewartemilym2014@gmail.com
 * Kyle Ryan - rookoyole@gmail.com
 
